@@ -128,5 +128,568 @@
                       "bytes":  18731856,
                       "sha256":  "843068991daaa1f73ad9f6239bce4d0f6a07a51f18c37ea2a867e9beca71295c"
                   }
-              ]
+              ],
+    "managedArchives":  [
+                            {
+                                "archive":  "payload/asr-runtime.zip",
+                                "component":  "asr",
+                                "files":  5,
+                                "entries":  [
+                                                {
+                                                    "path":  "llama-funasr-sensevoice.exe",
+                                                    "bytes":  1607728,
+                                                    "sha256":  "77b832ea04ef27bfc7c3fd3cf211c4024a5e59ace3c852855428ee95a3ef629e"
+                                                },
+                                                {
+                                                    "path":  "models/fsmn-vad.gguf",
+                                                    "bytes":  1720512,
+                                                    "sha256":  "1270f2559c495f4e7b6e739541151027d360761a3fda43fc147034f5719f5479"
+                                                },
+                                                {
+                                                    "path":  "models/sensevoice-small-q8.gguf",
+                                                    "bytes":  254208320,
+                                                    "sha256":  "4ae45c94422de949b387e2e0fb10d7e14e4c42c69db30c3444ecc7d4b844b7c5"
+                                                },
+                                                {
+                                                    "path":  "pinvou-asr.exe",
+                                                    "bytes":  516656,
+                                                    "sha256":  "3dfa65f66c3c56c838345691e142c0adeec6d2713555ddd05a3cdb657415d8ca"
+                                                },
+                                                {
+                                                    "path":  "README.md",
+                                                    "bytes":  2117,
+                                                    "sha256":  "faa7b6d20446d1f3e3d537f824edf4e22c33033216fa8d00a61447a0f318e1fb"
+                                                }
+                                            ]
+                            },
+                            {
+                                "archive":  "payload/poppler-runtime.zip",
+                                "component":  "poppler",
+                                "files":  41,
+                                "entries":  [
+                                                {
+                                                    "path":  "cairo.dll",
+                                                    "bytes":  1054256,
+                                                    "sha256":  "3ca973a77fb3e489523dedf03245006b8fcae028ed1167e0c01c0495b8035cd0"
+                                                },
+                                                {
+                                                    "path":  "charset.dll",
+                                                    "bytes":  26152,
+                                                    "sha256":  "53abebe88b78211c2310555006ca3730ee5df86847149369bcc263677655de06"
+                                                },
+                                                {
+                                                    "path":  "deflate.dll",
+                                                    "bytes":  191024,
+                                                    "sha256":  "cbbf5d9020e9462e0626f4c943efba8ab509832988c808f51fa8d43cc0ef72d2"
+                                                },
+                                                {
+                                                    "path":  "expat.dll",
+                                                    "bytes":  280104,
+                                                    "sha256":  "a2a8fbcd451472f18b924e8dd55ab1664b682dc77198fce8f011bf1deb7fc040"
+                                                },
+                                                {
+                                                    "path":  "fontconfig-1.dll",
+                                                    "bytes":  304680,
+                                                    "sha256":  "64f6ed2a7433a805a3ae05177ef303c40304dcabb04bb7000136c2398c742d53"
+                                                },
+                                                {
+                                                    "path":  "freetype.dll",
+                                                    "bytes":  697904,
+                                                    "sha256":  "42e62da4aae25446458b6323d239fd2c3e625e629897566b5ce4fa518a04d4b7"
+                                                },
+                                                {
+                                                    "path":  "iconv.dll",
+                                                    "bytes":  1099816,
+                                                    "sha256":  "a41d482e3e8c60dfc796510e65cb0802c8aeaad5dfe8fd723aac830a49e77d55"
+                                                },
+                                                {
+                                                    "path":  "jpeg8.dll",
+                                                    "bytes":  699944,
+                                                    "sha256":  "3d5c1b63ce0b0bb97a178501e8e6f9f1bc9923d3777066d543406c3bd28d304a"
+                                                },
+                                                {
+                                                    "path":  "lcms2.dll",
+                                                    "bytes":  594984,
+                                                    "sha256":  "c062a35d97ef2237501932525dff9749424a017950008b79c5bd9098daf85063"
+                                                },
+                                                {
+                                                    "path":  "Lerc.dll",
+                                                    "bytes":  554032,
+                                                    "sha256":  "529a9192db591a0524f5a13b42f4dc24241aff156d157886c9ca5cedaf978835"
+                                                },
+                                                {
+                                                    "path":  "libcrypto-3-x64.dll",
+                                                    "bytes":  7438896,
+                                                    "sha256":  "e71c6cf9085115ff8ed8a3d3665e957b8ace8964e71083aa691a057f2c982fa0"
+                                                },
+                                                {
+                                                    "path":  "libcurl.dll",
+                                                    "bytes":  767016,
+                                                    "sha256":  "22a57e6e3a6909e566672fd9546e1565fb4dfbcfc284488bfc796759743a4d5d"
+                                                },
+                                                {
+                                                    "path":  "libexpat.dll",
+                                                    "bytes":  280112,
+                                                    "sha256":  "ced7d94e70a853f15a741fb0982dd6a98d08a42a0a46ff51bb93f1f7235a5446"
+                                                },
+                                                {
+                                                    "path":  "liblzma.dll",
+                                                    "bytes":  201776,
+                                                    "sha256":  "d5677a9de939eadbc4adc1254fcec111a268bf518c92b6414a1735f354f43741"
+                                                },
+                                                {
+                                                    "path":  "libpng16.dll",
+                                                    "bytes":  212008,
+                                                    "sha256":  "a9b6985e80497fd83361931ed1bec8836b6cd609932b9d649838840decda9540"
+                                                },
+                                                {
+                                                    "path":  "libssh2.dll",
+                                                    "bytes":  271400,
+                                                    "sha256":  "a7614bcafc0e4ada0aa8d61e21db09cdf881a4233174e5dbb5dc6e4c30c1433b"
+                                                },
+                                                {
+                                                    "path":  "libtiff.dll",
+                                                    "bytes":  510504,
+                                                    "sha256":  "a4df1fcbf8706ba46790d1c0c4e83104992a1a9f210f547b3d638007d3b4f820"
+                                                },
+                                                {
+                                                    "path":  "libzstd.dll",
+                                                    "bytes":  671784,
+                                                    "sha256":  "a19ead61fd0a02b0a890887dab11bdf73ec2fdc982628dbcb04d46ee876e37d3"
+                                                },
+                                                {
+                                                    "path":  "LICENSE",
+                                                    "bytes":  1091,
+                                                    "sha256":  "c6f3b064cf37142b3711dfef8db4ed75e6590633139012815ad5d5da55bd47d4"
+                                                },
+                                                {
+                                                    "path":  "openjp2.dll",
+                                                    "bytes":  373800,
+                                                    "sha256":  "953f0ec5291ed1f4a88c8c066f9716dfbd432f0fa63936c0ff9040320489de0b"
+                                                },
+                                                {
+                                                    "path":  "pdfattach.exe",
+                                                    "bytes":  36392,
+                                                    "sha256":  "406d426f2c92a799a17b1b63b6a9e589f30155bd6c43735255d8c7c91ec62dea"
+                                                },
+                                                {
+                                                    "path":  "pdfdetach.exe",
+                                                    "bytes":  60456,
+                                                    "sha256":  "144ff62b5a320daddb25ac54ebf424dc8f9de4ad70fe09fdb9ecedca901f76b9"
+                                                },
+                                                {
+                                                    "path":  "pdffonts.exe",
+                                                    "bytes":  39472,
+                                                    "sha256":  "064ff61c442d8a7574982b1db7e88b55cd023247a013e475fe82b617357559b3"
+                                                },
+                                                {
+                                                    "path":  "pdfimages.exe",
+                                                    "bytes":  65064,
+                                                    "sha256":  "919163998b23083b0b8dab284962c8ebd41f83a82a83805ecbf774968cd00b58"
+                                                },
+                                                {
+                                                    "path":  "pdfinfo.exe",
+                                                    "bytes":  78888,
+                                                    "sha256":  "21d02ca3d8b3c475c20dbeb71ddfe105d998719e0a601d9652ee32d25c829666"
+                                                },
+                                                {
+                                                    "path":  "pdfseparate.exe",
+                                                    "bytes":  37424,
+                                                    "sha256":  "21a50c2756b696b8ef1b2fd3ca5f88e8b068a434de6ec274f93582553c912044"
+                                                },
+                                                {
+                                                    "path":  "pdftocairo.exe",
+                                                    "bytes":  174640,
+                                                    "sha256":  "bdc06bdbdba1bc1c0fcc76e6ee4e2bacafce9f3e84cf3c02322f57001647617d"
+                                                },
+                                                {
+                                                    "path":  "pdftohtml.exe",
+                                                    "bytes":  147496,
+                                                    "sha256":  "78e92d48770a37d6aab6fc4e0d94d0639d980e22526d75c0ed7786924b789867"
+                                                },
+                                                {
+                                                    "path":  "pdftoppm.exe",
+                                                    "bytes":  63016,
+                                                    "sha256":  "367655892910db4fd69a2907edd46195ae226b1313c68f75ff5169ce2c3a8482"
+                                                },
+                                                {
+                                                    "path":  "pdftops.exe",
+                                                    "bytes":  61480,
+                                                    "sha256":  "cf691d52ea22de813e021ad9491b37e348319bdb55091cc980c7db34f69e89b8"
+                                                },
+                                                {
+                                                    "path":  "pdftotext.exe",
+                                                    "bytes":  84016,
+                                                    "sha256":  "321a4169e3b1d445188a51facea12c4c23a2124bea22aad9cfac97ff17d295c0"
+                                                },
+                                                {
+                                                    "path":  "pdfunite.exe",
+                                                    "bytes":  51760,
+                                                    "sha256":  "ecf10bd468187fedf4f9439f7511873fa2b6d0979dbbe2fe44ac6bd4c21e51b3"
+                                                },
+                                                {
+                                                    "path":  "pixman-1-0.dll",
+                                                    "bytes":  613928,
+                                                    "sha256":  "d960825c1dcdb7e71d2c560185487e4e54b72a2258e5e3c5f22e22f0e8f2f15b"
+                                                },
+                                                {
+                                                    "path":  "poppler.dll",
+                                                    "bytes":  6465064,
+                                                    "sha256":  "6af0dfd762abae51124a2bc88c231c4f67568c101541b04e32da69e249c2c2c0"
+                                                },
+                                                {
+                                                    "path":  "poppler-cpp.dll",
+                                                    "bytes":  191024,
+                                                    "sha256":  "feb38b71ebc8de9ed90edc4b31e3f9b41cf22709ad8de941c2e4260c70f1689e"
+                                                },
+                                                {
+                                                    "path":  "poppler-glib.dll",
+                                                    "bytes":  468520,
+                                                    "sha256":  "e743d0f653977d77eef9becf06542810931138b7c9d898079bb928e1576ff062"
+                                                },
+                                                {
+                                                    "path":  "README.md",
+                                                    "bytes":  832,
+                                                    "sha256":  "decc66c3744aab2e2a81e1bb04f3fd2d77f207cc78f4dbfc7f64555708017449"
+                                                },
+                                                {
+                                                    "path":  "tiff.dll",
+                                                    "bytes":  510512,
+                                                    "sha256":  "4e3dacfec49db54ae7cdb06b3b7862e8852da96c007a1838ff092ba0fa47e468"
+                                                },
+                                                {
+                                                    "path":  "zlib.dll",
+                                                    "bytes":  103984,
+                                                    "sha256":  "9b80e551176cd945ed19701d05e4f2114c5e69a77600bafd3a4a23799f4f234e"
+                                                },
+                                                {
+                                                    "path":  "zstd.dll",
+                                                    "bytes":  671784,
+                                                    "sha256":  "9c2c9b2651915c4a0c9f24fce6743766a8a6c6686ec22845a2717f9d73fcfff7"
+                                                },
+                                                {
+                                                    "path":  "zstd.exe",
+                                                    "bytes":  178216,
+                                                    "sha256":  "68b0f1bcca2ab8161f73209e2c6c3c88abe58ea9c66a4ca62af3d3b4c96493ca"
+                                                }
+                                            ]
+                            },
+                            {
+                                "archive":  "payload/tesseract-runtime.zip",
+                                "component":  "tesseract",
+                                "files":  62,
+                                "entries":  [
+                                                {
+                                                    "path":  "libarchive-13.dll",
+                                                    "bytes":  803472,
+                                                    "sha256":  "bde3670f112fd82e68c9848bf34b774e98b224b8a0a8fde5ed595a6a12edd9a7"
+                                                },
+                                                {
+                                                    "path":  "libb2-1.dll",
+                                                    "bytes":  47736,
+                                                    "sha256":  "f9bd43c0a3deaa83af78574d258dc2a1a929dae7924ad8b72e5c0f486fae7111"
+                                                },
+                                                {
+                                                    "path":  "libbrotlicommon.dll",
+                                                    "bytes":  156752,
+                                                    "sha256":  "5aa0f8af9b8c1d0f067feec3d1749be04564b7ada1c985534b8cddbe5cbd5949"
+                                                },
+                                                {
+                                                    "path":  "libbrotlidec.dll",
+                                                    "bytes":  74792,
+                                                    "sha256":  "81d24e3cc13fc1ee86eb84a2165a8a5cd4a900958f8a5bca364abd85fbb53985"
+                                                },
+                                                {
+                                                    "path":  "libbz2-1.dll",
+                                                    "bytes":  114320,
+                                                    "sha256":  "cb44a8ed8dc1dd699811c8b4c4a14c23129847478fccc25da47089348c58fa1d"
+                                                },
+                                                {
+                                                    "path":  "libcairo-2.dll",
+                                                    "bytes":  1238328,
+                                                    "sha256":  "a890c12bfb2dd64bf3d3364bd1a250ecdabcc48e77dbe1bb167cfad66b280684"
+                                                },
+                                                {
+                                                    "path":  "libcrypto-3-x64.dll",
+                                                    "bytes":  5311568,
+                                                    "sha256":  "adbff5497d3a7825a0d9bb7d8c4139d4d534db0698ae9d567fd58a269869b29c"
+                                                },
+                                                {
+                                                    "path":  "libcurl-4.dll",
+                                                    "bytes":  1019520,
+                                                    "sha256":  "23ebcca884196f1a49cbd4313917def7e39fdcd3f55f353f2290d96428d57cc6"
+                                                },
+                                                {
+                                                    "path":  "libdatrie-1.dll",
+                                                    "bytes":  47744,
+                                                    "sha256":  "c520c3b5a79ce48a282b6acd1658ac875045926c7d5472a6cfd88fa869c35281"
+                                                },
+                                                {
+                                                    "path":  "libdeflate.dll",
+                                                    "bytes":  107984,
+                                                    "sha256":  "af0115060c915ff7c2b1318673a92a6278cf8337c733a88ae3aca3a8600bb577"
+                                                },
+                                                {
+                                                    "path":  "libexpat-1.dll",
+                                                    "bytes":  205376,
+                                                    "sha256":  "b2b0099bd4242b4ff0716588e0be543bfb46354f563d7f5645b7e63e0dfd9bfd"
+                                                },
+                                                {
+                                                    "path":  "libffi-8.dll",
+                                                    "bytes":  47064,
+                                                    "sha256":  "d5243802e6a28fc88a31948b44f0b685d377fe8aa2d8eebd577d151488f91a96"
+                                                },
+                                                {
+                                                    "path":  "libfontconfig-1.dll",
+                                                    "bytes":  363552,
+                                                    "sha256":  "98e121a55d3b5af0325f72acd0f1002442bc3c48e43ebbfaec912b9cfab90226"
+                                                },
+                                                {
+                                                    "path":  "libfreetype-6.dll",
+                                                    "bytes":  801320,
+                                                    "sha256":  "9667d6e895e1b46c813ebd330dafa6c5927f9e4888bf9bf135a6ae038101e6c6"
+                                                },
+                                                {
+                                                    "path":  "libfribidi-0.dll",
+                                                    "bytes":  169768,
+                                                    "sha256":  "56c0b1371aedf57746553da19015939738ce3fd7cd4c8962af29c4d1bae75bcf"
+                                                },
+                                                {
+                                                    "path":  "libgcc_s_seh-1.dll",
+                                                    "bytes":  165096,
+                                                    "sha256":  "9fbe82b28c9cf0a665b7efc64b4079892ed2bf8c65fa3321b46dcf6c7c8322df"
+                                                },
+                                                {
+                                                    "path":  "libgif-7.dll",
+                                                    "bytes":  54720,
+                                                    "sha256":  "325463ad65359a83d259d6d6edf331182ca7d5a6ae7a7f1b3f3665633d22f17a"
+                                                },
+                                                {
+                                                    "path":  "libgio-2.0-0.dll",
+                                                    "bytes":  1843480,
+                                                    "sha256":  "3c190aff27968c2d0730ae88596848a6fe32597a4a1ac784acbb85c70eec2280"
+                                                },
+                                                {
+                                                    "path":  "libglib-2.0-0.dll",
+                                                    "bytes":  1494568,
+                                                    "sha256":  "27afe56a6a72723df57184ea6c1d4be2089dbd70e0ee5072ac1bfe72e0ded21d"
+                                                },
+                                                {
+                                                    "path":  "libgmodule-2.0-0.dll",
+                                                    "bytes":  40144,
+                                                    "sha256":  "7bc5429d0f23e556d86bd7f75493db680e53f2800055e0e7bcef96f30ca6dca3"
+                                                },
+                                                {
+                                                    "path":  "libgobject-2.0-0.dll",
+                                                    "bytes":  370176,
+                                                    "sha256":  "54dae561e8aa7b583b60e9e45a333ef49d69a6a41519681bc3f1e4cd24dddb12"
+                                                },
+                                                {
+                                                    "path":  "libgraphite2.dll",
+                                                    "bytes":  165896,
+                                                    "sha256":  "5d71048908eab497c12bc86314f26e601c87e25d39bfdd82599a08620dccac72"
+                                                },
+                                                {
+                                                    "path":  "libharfbuzz-0.dll",
+                                                    "bytes":  1371096,
+                                                    "sha256":  "30ae27efe8fb04973bb2814d6d13b0bad75ce4cfa78610523e4d21fe4599c1b8"
+                                                },
+                                                {
+                                                    "path":  "libiconv-2.dll",
+                                                    "bytes":  1131560,
+                                                    "sha256":  "85173b1055fc11e869abd9fe8f7b5008129e1a5cbe79ad808d0552394efcfc18"
+                                                },
+                                                {
+                                                    "path":  "libicudt75.dll",
+                                                    "bytes":  30756400,
+                                                    "sha256":  "8bb87dcea1aed4ba897dfa59685ae5e00fd84b46b1fead932608fafbdbaf9c89"
+                                                },
+                                                {
+                                                    "path":  "libicuin75.dll",
+                                                    "bytes":  3394568,
+                                                    "sha256":  "24057d4149e19a48c7996ff798a134d0fe9fe396dcb06349f02fad3a4c3de5a9"
+                                                },
+                                                {
+                                                    "path":  "libicuuc75.dll",
+                                                    "bytes":  1945824,
+                                                    "sha256":  "54a278aa2c15c55c5d39e0f1f1b4d7df9d481d429ab1d526eda85dc5c3bd7844"
+                                                },
+                                                {
+                                                    "path":  "libidn2-0.dll",
+                                                    "bytes":  256320,
+                                                    "sha256":  "6fa1e2f2b3d89d631a06529ddc50ba951044acb0bd06b0ee478ec5f0271992b2"
+                                                },
+                                                {
+                                                    "path":  "libintl-8.dll",
+                                                    "bytes":  202040,
+                                                    "sha256":  "8aec2a8e588033332672af4d5e85c6a8733d3ea28b156bc5e36e418099e71213"
+                                                },
+                                                {
+                                                    "path":  "libjbig-0.dll",
+                                                    "bytes":  75440,
+                                                    "sha256":  "a95506a49f4c45444abc0c9e0e533036cdc3f2a53f00abe34547519712fa0a89"
+                                                },
+                                                {
+                                                    "path":  "libjpeg-8.dll",
+                                                    "bytes":  937376,
+                                                    "sha256":  "f20cb04e925037795e7a898d3608895de3d8ddf83fdb64602e497477f0e1398e"
+                                                },
+                                                {
+                                                    "path":  "libleptonica-6.dll",
+                                                    "bytes":  2787616,
+                                                    "sha256":  "40711887c8b4e21bb9aa0e581b82e3c55a934ad4d6121650a2f560fbdb52206e"
+                                                },
+                                                {
+                                                    "path":  "libLerc.dll",
+                                                    "bytes":  774616,
+                                                    "sha256":  "befdbd32c139d293ba614cbdc01baf22eb604adbe7a8bca4987f5bb900a167c5"
+                                                },
+                                                {
+                                                    "path":  "liblz4.dll",
+                                                    "bytes":  172016,
+                                                    "sha256":  "1fe43d196186a73892b22e972058f4e9800466efa34fe62e7468d9cb1132aa03"
+                                                },
+                                                {
+                                                    "path":  "liblzma-5.dll",
+                                                    "bytes":  200592,
+                                                    "sha256":  "7f4efb5f1b351e3bb950d70f8f02288f395ddb62b6ec25ca09f491fd47d583a2"
+                                                },
+                                                {
+                                                    "path":  "libopenjp2-7.dll",
+                                                    "bytes":  475560,
+                                                    "sha256":  "3f83200c9d0a4afcb910f3cfb381a72171e565110a15069eb44906d8bb33e0af"
+                                                },
+                                                {
+                                                    "path":  "libpango-1.0-0.dll",
+                                                    "bytes":  424480,
+                                                    "sha256":  "eadb88a4a106dfa776579496c723aaedcee29695f484333cd245a83bb8b837d4"
+                                                },
+                                                {
+                                                    "path":  "libpangocairo-1.0-0.dll",
+                                                    "bytes":  87392,
+                                                    "sha256":  "8fd9ddd1bd0ee0e337b1879ee05da31c9458068e1086a1a74fe127e45e7b7fc5"
+                                                },
+                                                {
+                                                    "path":  "libpangoft2-1.0-0.dll",
+                                                    "bytes":  116128,
+                                                    "sha256":  "6e35ac645ff005794cf65e192382db80ace6ac11f11bb463724994480396a050"
+                                                },
+                                                {
+                                                    "path":  "libpangowin32-1.0-0.dll",
+                                                    "bytes":  128464,
+                                                    "sha256":  "906a8ff231f6277744203e5d73749583695879c33261a6176f4ab79d84c54103"
+                                                },
+                                                {
+                                                    "path":  "libpcre2-8-0.dll",
+                                                    "bytes":  419248,
+                                                    "sha256":  "45ae1817a7eec93d56dc530b35bc1560667a080dbe1d2a6c2fae43ce28f7e3fd"
+                                                },
+                                                {
+                                                    "path":  "libpixman-1-0.dll",
+                                                    "bytes":  722536,
+                                                    "sha256":  "98f687c46a5d34bb31fb8be6957bde5965de9fd7cb73f5314d1f29b0ee0bb225"
+                                                },
+                                                {
+                                                    "path":  "libpng16-16.dll",
+                                                    "bytes":  268936,
+                                                    "sha256":  "5e9d823ab5d2bbe43164093030999ae8a811b86b281f60bbdb89554a90ffe742"
+                                                },
+                                                {
+                                                    "path":  "libpsl-5.dll",
+                                                    "bytes":  117120,
+                                                    "sha256":  "7f0744c35952a092b8dbd1ff6b2ae21765df99b4e24bf13413b43ef85c68107a"
+                                                },
+                                                {
+                                                    "path":  "libsharpyuv-0.dll",
+                                                    "bytes":  71208,
+                                                    "sha256":  "37abee3dece6845deed19a195242778fc78f21a4de97bf7b1ea43a3e29a04067"
+                                                },
+                                                {
+                                                    "path":  "libssh2-1.dll",
+                                                    "bytes":  269200,
+                                                    "sha256":  "2dfeb2274f2cdee9bbcc1e22f6482e694ea6d3d5d7a3c80c7b912c0d7b145da4"
+                                                },
+                                                {
+                                                    "path":  "libstdc++-6.dll",
+                                                    "bytes":  2414040,
+                                                    "sha256":  "43491cf448ae80be046400cb4940c3468453da1797455411b98084d31de0dfa1"
+                                                },
+                                                {
+                                                    "path":  "libtesseract-5.dll",
+                                                    "bytes":  3336896,
+                                                    "sha256":  "7b291a1570cda3f4a218a844bb08ac6eaa94392a459d857da9c685e01e0211ab"
+                                                },
+                                                {
+                                                    "path":  "libthai-0.dll",
+                                                    "bytes":  83104,
+                                                    "sha256":  "f049ceeb6afa096d81443ea6ea37058139a9c3a44fa1c0fbd0f482c21022804f"
+                                                },
+                                                {
+                                                    "path":  "libtiff-6.dll",
+                                                    "bytes":  614344,
+                                                    "sha256":  "a4583482abff9b13561568689a2b925f28a24f1dd194ed266d6d01f88883d6bd"
+                                                },
+                                                {
+                                                    "path":  "libunistring-5.dll",
+                                                    "bytes":  2012648,
+                                                    "sha256":  "b520d6f59ebe69bc5fb6c3cbf53959e3fec98e9a729590163a36b417dee4991e"
+                                                },
+                                                {
+                                                    "path":  "libwebp-7.dll",
+                                                    "bytes":  756936,
+                                                    "sha256":  "587c44f1a4faf62ca416f56dc55a30df3384da73da57d1b5b0c8af2ef1b402e6"
+                                                },
+                                                {
+                                                    "path":  "libwebpmux-3.dll",
+                                                    "bytes":  92088,
+                                                    "sha256":  "752a253d162ff7e2be2f8fa3b11a882cbaa07228c7b2640ab4a2822dc4fae7c8"
+                                                },
+                                                {
+                                                    "path":  "libwinpthread-1.dll",
+                                                    "bytes":  74696,
+                                                    "sha256":  "36608f3ece6317b3fdaa5cd4ed235a515f6e49a3f800d968fe28e816a2d28ebc"
+                                                },
+                                                {
+                                                    "path":  "libzstd.dll",
+                                                    "bytes":  1193200,
+                                                    "sha256":  "5a2f569364006ac362a3abb27ac198df4c20b6c7cf9de03f6c0020f4102a7bd1"
+                                                },
+                                                {
+                                                    "path":  "LICENSE",
+                                                    "bytes":  11560,
+                                                    "sha256":  "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+                                                },
+                                                {
+                                                    "path":  "README.md",
+                                                    "bytes":  1800,
+                                                    "sha256":  "9f8e96180ac679157a65f180fc487b2f2168719b75a5687c425917dee6ff5fa9"
+                                                },
+                                                {
+                                                    "path":  "tessdata/chi_sim.traineddata",
+                                                    "bytes":  2469156,
+                                                    "sha256":  "a5fcb6f0db1e1d6d8522f39db4e848f05984669172e584e8d76b6b3141e1f730"
+                                                },
+                                                {
+                                                    "path":  "tessdata/eng.traineddata",
+                                                    "bytes":  4113088,
+                                                    "sha256":  "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2"
+                                                },
+                                                {
+                                                    "path":  "tesseract.exe",
+                                                    "bytes":  86152,
+                                                    "sha256":  "ccd044d6cf16eaaad151260e1fcc5e3e1504cd1b8644e940b4f7ae3e315dd0d3"
+                                                },
+                                                {
+                                                    "path":  "UPSTREAM-README.md",
+                                                    "bytes":  8274,
+                                                    "sha256":  "fb5d73c7aa68abb4a1545c9f66efd31273587097700eb0f43233c29fe9986fb8"
+                                                },
+                                                {
+                                                    "path":  "zlib1.dll",
+                                                    "bytes":  134176,
+                                                    "sha256":  "75f6fef478f85654d9ec5b2b5ecc956e74ce0cc32d30c7fd1ea7a4c86f9acec5"
+                                                }
+                                            ]
+                            }
+                        ]
 }
