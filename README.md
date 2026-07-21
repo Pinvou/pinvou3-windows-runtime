@@ -1,0 +1,33 @@
+# pinvou3 Windows Runtime
+
+本仓库保存 PINVOU Windows 端的私有运行时资源，由主仓库
+`Pinvou/pinvou3` 通过 submodule commit 精确引用。
+
+## 目录
+
+- `payload/7zip`：7-Zip 运行时；
+- `payload/asr`：ASR wrapper、SenseVoice backend 和模型；
+- `payload/poppler`：PDF 工具；
+- `payload/tesseract`：OCR 工具和语言数据；
+- `payload/vc_redist`：VC++ Redistributable；
+- `payload/*.zip`：Python、Node.js、Pandoc 和 ONNX Runtime 上游组件包；
+- `windows-runtime.manifest.json`：全部资源的文件级 SHA-256 清单。
+
+二进制文件统一使用 Git LFS。禁止 force-push 或覆盖已有历史；资源升级通过新 commit
+追加，主仓库更新 submodule gitlink 后才会进入发布构建。
+
+## 更新资源
+
+1. 修改 `payload/` 中对应组件；
+2. 重新生成 manifest：
+
+   ```powershell
+   powershell -NoProfile -ExecutionPolicy Bypass -File scripts/update-manifest.ps1
+   ```
+
+3. 确认 `git lfs status` 中所有二进制均由 LFS 管理；
+4. 提交并推送；
+5. 在主仓库更新 submodule commit 和 lock manifest；
+6. 从干净 checkout 执行 Windows runtime staging 和安装包验证。
+
+主仓库的普通 `cargo check` 不依赖本 submodule；只有 Windows 发布构建需要初始化它。
