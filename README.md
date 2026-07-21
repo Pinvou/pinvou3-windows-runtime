@@ -5,13 +5,13 @@
 
 ## 目录
 
-- `payload/7zip`：7-Zip 运行时；
+- `payload/7zip-runtime.zip`：7-Zip 运行时；
 - `payload/asr-runtime.zip`：ASR wrapper、SenseVoice backend 和模型；
 - `payload/poppler-runtime.zip`：PDF 工具；
 - `payload/tesseract-runtime.zip`：OCR 工具和语言数据；
 - `payload/vc_redist`：VC++ Redistributable；
 - `payload/*.zip`：Python、Node.js、Pandoc 和 ONNX Runtime 上游组件包；
-- `windows-runtime.manifest.json`：仓库级资源以及三个自维护组件 ZIP 内部文件的 SHA-256 清单。
+- `windows-runtime.manifest.json`：仓库级资源以及四个自维护组件 ZIP 内部文件的 SHA-256 清单。
 
 二进制文件统一使用 Git LFS。禁止 force-push 或覆盖已有历史；资源升级通过新 commit
 追加，主仓库更新 submodule gitlink 后才会进入发布构建。

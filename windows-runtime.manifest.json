@@ -5,8 +5,8 @@
     "components":  [
                        {
                            "name":  "7zip",
-                           "files":  5,
-                           "bytes":  2520695
+                           "files":  1,
+                           "bytes":  1139584
                        },
                        {
                            "name":  "asr",
@@ -51,34 +51,10 @@
                    ],
     "files":  [
                   {
-                      "path":  "payload/7zip/7z.dll",
+                      "path":  "payload/7zip-runtime.zip",
                       "component":  "7zip",
-                      "bytes":  1922088,
-                      "sha256":  "0b1186f31d4a71fd87ff0996860ff0bd4ee44a743c2b9e72213f50507768ef50"
-                  },
-                  {
-                      "path":  "payload/7zip/7z.exe",
-                      "component":  "7zip",
-                      "bytes":  589872,
-                      "sha256":  "da0e5174d48502313d6052f26c4166b1211fc329b966ea06bca7cb04bd35dd25"
-                  },
-                  {
-                      "path":  "payload/7zip/License.txt",
-                      "component":  "7zip",
-                      "bytes":  6031,
-                      "sha256":  "519ac0a4bded9c18ea02e0afb71f663d8c47373bd9facd3ac96a79f51d77765d"
-                  },
-                  {
-                      "path":  "payload/7zip/README.md",
-                      "component":  "7zip",
-                      "bytes":  993,
-                      "sha256":  "57f2a020212c5c76bbe6842e1401e352f4db850ce92df39e898c198ef4019fe5"
-                  },
-                  {
-                      "path":  "payload/7zip/readme.txt",
-                      "component":  "7zip",
-                      "bytes":  1711,
-                      "sha256":  "23234f1a180cd0ccbc25bfd8bb658c877a5beb91dc7c39ec7c6582343d72a06f"
+                      "bytes":  1139584,
+                      "sha256":  "e64218459c71c09be20f079ac38ccded72adbb32704ba1a46e0543ce7106f36d"
                   },
                   {
                       "path":  "payload/asr-runtime.zip",
@@ -130,6 +106,38 @@
                   }
               ],
     "managedArchives":  [
+                            {
+                                "archive":  "payload/7zip-runtime.zip",
+                                "component":  "7zip",
+                                "files":  5,
+                                "entries":  [
+                                                {
+                                                    "path":  "7z.dll",
+                                                    "bytes":  1922088,
+                                                    "sha256":  "0b1186f31d4a71fd87ff0996860ff0bd4ee44a743c2b9e72213f50507768ef50"
+                                                },
+                                                {
+                                                    "path":  "7z.exe",
+                                                    "bytes":  589872,
+                                                    "sha256":  "da0e5174d48502313d6052f26c4166b1211fc329b966ea06bca7cb04bd35dd25"
+                                                },
+                                                {
+                                                    "path":  "License.txt",
+                                                    "bytes":  6031,
+                                                    "sha256":  "519ac0a4bded9c18ea02e0afb71f663d8c47373bd9facd3ac96a79f51d77765d"
+                                                },
+                                                {
+                                                    "path":  "README.md",
+                                                    "bytes":  993,
+                                                    "sha256":  "57f2a020212c5c76bbe6842e1401e352f4db850ce92df39e898c198ef4019fe5"
+                                                },
+                                                {
+                                                    "path":  "readme.txt",
+                                                    "bytes":  1711,
+                                                    "sha256":  "23234f1a180cd0ccbc25bfd8bb658c877a5beb91dc7c39ec7c6582343d72a06f"
+                                                }
+                                            ]
+                            },
                             {
                                 "archive":  "payload/asr-runtime.zip",
                                 "component":  "asr",

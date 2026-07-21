@@ -35,7 +35,7 @@ function Get-ComponentName {
   if ($RelativePath -match '^python-') { return "python" }
   if ($RelativePath -match '^pandoc-') { return "pandoc" }
   if ($RelativePath -match '^onnxruntime-') { return "onnxruntime" }
-  if ($RelativePath -match '^(asr|poppler|tesseract)-runtime\.zip$') { return $Matches[1] }
+  if ($RelativePath -match '^(7zip|asr|poppler|tesseract)-runtime\.zip$') { return $Matches[1] }
   return $first
 }
 
@@ -112,7 +112,7 @@ $components = @(
 
 $managedArchives = @(
   $files |
-    Where-Object { $_.path -match '^payload/(asr|poppler|tesseract)-runtime\.zip$' } |
+    Where-Object { $_.path -match '^payload/(7zip|asr|poppler|tesseract)-runtime\.zip$' } |
     Sort-Object path |
     ForEach-Object {
       $archivePath = Join-Path $repoRoot $_.path.Replace('/', '\')
