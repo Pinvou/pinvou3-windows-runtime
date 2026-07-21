@@ -6,9 +6,9 @@
 ## 目录
 
 - `payload/7zip`：7-Zip 运行时；
-- `payload/asr`：ASR wrapper、SenseVoice backend 和模型；
-- `payload/poppler`：PDF 工具；
-- `payload/tesseract`：OCR 工具和语言数据；
+- `payload/asr-runtime.zip`：ASR wrapper、SenseVoice backend 和模型；
+- `payload/poppler-runtime.zip`：PDF 工具；
+- `payload/tesseract-runtime.zip`：OCR 工具和语言数据；
 - `payload/vc_redist`：VC++ Redistributable；
 - `payload/*.zip`：Python、Node.js、Pandoc 和 ONNX Runtime 上游组件包；
 - `windows-runtime.manifest.json`：全部资源的文件级 SHA-256 清单。
@@ -18,16 +18,25 @@
 
 ## 更新资源
 
-1. 修改 `payload/` 中对应组件；
-2. 重新生成 manifest：
+1. 在仓库外的临时目录中展开并修改对应组件；
+2. 使用确定性打包脚本更新组件 ZIP：
+
+   ```powershell
+   powershell -NoProfile -ExecutionPolicy Bypass -File scripts/pack-component.ps1 `
+     -SourceDirectory D:\runtime-work\asr `
+     -OutputPath payload\asr-runtime.zip `
+     -Force
+   ```
+
+3. 重新生成 manifest：
 
    ```powershell
    powershell -NoProfile -ExecutionPolicy Bypass -File scripts/update-manifest.ps1
    ```
 
-3. 确认 `git lfs status` 中所有二进制均由 LFS 管理；
-4. 提交并推送；
-5. 在主仓库更新 submodule commit 和 lock manifest；
-6. 从干净 checkout 执行 Windows runtime staging 和安装包验证。
+4. 确认 `git lfs status` 中所有二进制均由 LFS 管理；
+5. 提交并推送；
+6. 在主仓库更新 submodule commit 和 lock manifest；
+7. 从干净 checkout 执行 Windows runtime staging 和安装包验证。
 
 主仓库的普通 `cargo check` 不依赖本 submodule；只有 Windows 发布构建需要初始化它。

@@ -33,6 +33,7 @@ function Get-ComponentName {
   if ($RelativePath -match '^python-') { return "python" }
   if ($RelativePath -match '^pandoc-') { return "pandoc" }
   if ($RelativePath -match '^onnxruntime-') { return "onnxruntime" }
+  if ($RelativePath -match '^(asr|poppler|tesseract)-runtime\.zip$') { return $Matches[1] }
   return $first
 }
 
