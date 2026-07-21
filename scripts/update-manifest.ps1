@@ -130,9 +130,10 @@ $manifest = [ordered]@{
 }
 
 $encoding = New-Object System.Text.UTF8Encoding($false)
+$json = ($manifest | ConvertTo-Json -Depth 8).Replace("`r`n", "`n").Replace("`r", "`n")
 [System.IO.File]::WriteAllText(
   $OutputPath,
-  (($manifest | ConvertTo-Json -Depth 8) + "`n"),
+  ($json + "`n"),
   $encoding
 )
 
