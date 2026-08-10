@@ -7,6 +7,7 @@
 
 - `payload/7zip-runtime.zip`：7-Zip 运行时；
 - `payload/asr-runtime.zip`：ASR wrapper、SenseVoice backend 和模型；
+- `payload/asr/pinvou-asr.exe`：经过 manifest 锁定的 wrapper overlay，主仓 staging 校验 ZIP 后以此文件覆盖旧入口；
 - `payload/poppler-runtime.zip`：PDF 工具；
 - `payload/tesseract-runtime.zip`：OCR 工具和语言数据；
 - `payload/vc_redist`：VC++ Redistributable；
@@ -18,8 +19,8 @@
 
 ## 更新资源
 
-1. 在仓库外的临时目录中展开并修改对应组件；
-2. 使用确定性打包脚本更新组件 ZIP：
+1. 只更新 ASR wrapper 时，替换 `payload/asr/pinvou-asr.exe`，保留 backend 和模型归档；
+2. 更新其他 ASR 文件或组件时，在仓库外的临时目录中展开并修改对应组件，再使用确定性打包脚本更新组件 ZIP：
 
    ```powershell
    powershell -NoProfile -ExecutionPolicy Bypass -File scripts/pack-component.ps1 `

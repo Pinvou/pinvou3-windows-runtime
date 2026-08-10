@@ -10,8 +10,8 @@
                        },
                        {
                            "name":  "asr",
-                           "files":  1,
-                           "bytes":  245825604
+                           "files":  2,
+                           "bytes":  246217284
                        },
                        {
                            "name":  "node",
@@ -55,6 +55,12 @@
                       "component":  "7zip",
                       "bytes":  1139584,
                       "sha256":  "e64218459c71c09be20f079ac38ccded72adbb32704ba1a46e0543ce7106f36d"
+                  },
+                  {
+                      "path":  "payload/asr/pinvou-asr.exe",
+                      "component":  "asr",
+                      "bytes":  391680,
+                      "sha256":  "398dfadee41178f2bc51650f0e5167afae573ef03e40bcef362e59e1160e7134"
                   },
                   {
                       "path":  "payload/asr-runtime.zip",
