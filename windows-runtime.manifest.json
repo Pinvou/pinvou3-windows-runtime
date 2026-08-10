@@ -11,7 +11,7 @@
                        {
                            "name":  "asr",
                            "files":  1,
-                           "bytes":  2419208
+                           "bytes":  2419099
                        },
                        {
                            "name":  "node",
@@ -59,8 +59,8 @@
                   {
                       "path":  "payload/asr-runtime.zip",
                       "component":  "asr",
-                      "bytes":  2419208,
-                      "sha256":  "ad99d61da1cd32ce54c1326d97fc15af19242e6cd5ff7efd1dbc77f8bafd2ec3"
+                      "bytes":  2419099,
+                      "sha256":  "0e60a1bc82a15afaf3e51e6c3e224471f6f3c2a07fea8ddec52db64202b2eec4"
                   },
                   {
                       "path":  "payload/node-v24.18.0-win-x64.zip",
@@ -156,7 +156,7 @@
                                                 {
                                                     "path":  "pinvou-asr.exe",
                                                     "bytes":  391680,
-                                                    "sha256":  "398dfadee41178f2bc51650f0e5167afae573ef03e40bcef362e59e1160e7134"
+                                                    "sha256":  "7ccde20b4a0b5369ee08892026a66db87b6868d19797d42873df8e319df0152a"
                                                 },
                                                 {
                                                     "path":  "README.md",
@@ -734,7 +734,7 @@
                         {
                             "path":  "expanded/asr/pinvou-asr.exe",
                             "bytes":  391680,
-                            "sha256":  "398dfadee41178f2bc51650f0e5167afae573ef03e40bcef362e59e1160e7134"
+                            "sha256":  "7ccde20b4a0b5369ee08892026a66db87b6868d19797d42873df8e319df0152a"
                         },
                         {
                             "path":  "expanded/asr/README.md",
@@ -11383,8 +11383,8 @@
                         },
                         {
                             "path":  "payload/asr-runtime.zip",
-                            "bytes":  2419208,
-                            "sha256":  "ad99d61da1cd32ce54c1326d97fc15af19242e6cd5ff7efd1dbc77f8bafd2ec3"
+                            "bytes":  2419099,
+                            "sha256":  "0e60a1bc82a15afaf3e51e6c3e224471f6f3c2a07fea8ddec52db64202b2eec4"
                         },
                         {
                             "path":  "payload/node-v24.18.0-win-x64.zip",
