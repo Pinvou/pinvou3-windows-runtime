@@ -5,6 +5,8 @@
 
 ## 目录
 
+`payload/` 是本地打包和物化目录，不再提交二进制或新的 LFS 指针。Git 只跟踪 manifest、脚本和文档。
+
 - `payload/7zip-runtime.zip`：7-Zip 运行时；
 - `payload/asr-runtime.zip`：ASR wrapper、SenseVoice backend 和 FSMN VAD；识别模型不随安装包分发，由应用按需下载；
 - `payload/poppler-runtime.zip`：PDF 工具；
@@ -13,15 +15,16 @@
 - `payload/*.zip`：Python、Node.js、Pandoc 和 ONNX Runtime 上游组件包；
 - `windows-runtime.manifest.json`：仓库资源、组件 ZIP 内容以及最终 staging 文件集合的可信 SHA-256 清单。
 
-二进制内容通过本仓库 `runtime-<完整 commit>` Release 的附件分发。Git 中继续保留
-manifest 与历史 LFS 指针，消费者禁用 LFS smudge 后初始化固定 gitlink，再从该提交对应的
+二进制内容通过本仓库 `runtime-<完整 commit>` Release 的附件分发。历史 LFS 指针保留在旧提交中，
+新提交忽略 `payload/`，不再生成新的 LFS 指针。消费者初始化固定 gitlink，再从该提交对应的
 Release 下载附件并校验大小和 SHA256。无需 Git LFS 下载额度，禁止使用 `latest`。
 禁止 force-push、覆盖已有历史或替换已发布附件；资源升级通过新 commit 和新 Release 追加。
 主仓库更新 submodule gitlink 后才会进入发布构建。
 
-已有版本 `dcde8f01dc009c4acecfbe3bc64dff39de22d341` 的全部原始归档已经校验并发布，
-版本和内容不变。普通 clone 本仓库前设置 `GIT_LFS_SKIP_SMUDGE=1`，避免历史指针触发 LFS 下载；
-主仓库 `npm run runtime:windows:init` 会自动完成该设置和 Release 物化。
+主仓库当前锁定版本的全部原始归档已经校验并发布至
+[runtime-dcde8f01dc009c4acecfbe3bc64dff39de22d341](https://github.com/Pinvou/pinvou3-windows-runtime/releases/tag/runtime-dcde8f01dc009c4acecfbe3bc64dff39de22d341)，
+版本和内容不变。新 main 可以直接 clone，不触发 LFS 下载。检出旧的 LFS 历史版本前设置
+`GIT_LFS_SKIP_SMUDGE=1`；主仓库 `npm run runtime:windows:init` 自动设置它并按固定 Release 物化。
 
 ## 更新资源
 
@@ -49,8 +52,8 @@ Release 下载附件并校验大小和 SHA256。无需 Git LFS 下载额度，�
    powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test-manifest.ps1
    ```
 
-5. 确认 `git lfs status` 中的指针与 manifest 对应；Git LFS 仅用于生成版本化指针元数据；
-6. 提交后设置 `GIT_LFS_SKIP_PUSH=1` 再推送，避免上传 LFS 对象；此时尚不可更新主仓库 gitlink；
+5. 核对 manifest 中所有文件的大小和 SHA256；`payload/` 已忽略，不生成或提交 LFS 指针；
+6. 仅提交 manifest、脚本和文档并正常推送；此时尚不可更新主仓库 gitlink。跳过 LFS 上传不能代替迁移，因为 GitHub 会拒绝引用未上传 LFS 对象的新提交；
 7. 从仍保存完整 `payload/` 的目录运行 `python scripts/publish-release.py --commit <完整 commit> --payload-root <目录> --check-only`；
 8. 去掉 `--check-only` 发布。脚本先验证提交内的 manifest 与所有原始文件，创建 draft、上传附件并核对 GitHub 服务端摘要，最后公开 Release；已存在的标签或 Release 会拒绝覆盖；
 9. 发布失败时先检查保留的 draft，保持主仓库旧 gitlink。发布成功后在主仓库更新 gitlink 和 lock manifest；
